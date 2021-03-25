@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center">Weight Converter</h1>
+          <form action="" class="form form-group mt-4">
+            <input
+              id="weightInput"
+              type="number"
+              placeholder="Enter value here"
+              class="form-control form-control-lg"
+            />
+            <select class="form-control mt-2" id="unitSelector">
+              <option selected value="pound">Pounds</option>
+              <option value="gram">Grams</option>
+              <option value="kg">Kilograms</option>
+              <option value="oz">Ounces</option>
+            </select>
+          </form>
+          <div id="output">
+            <div class="card bg-primary mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Grams:</h5>
+                <div id="gramsOutput" class="card-text"></div>
+              </div>
+            </div>
+            <div class="card bg-success mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Kilograms:</h5>
+                <div id="kgsOutput" class="card-text"></div>
+              </div>
+            </div>
+            <div class="card bg-danger mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Ounces:</h5>
+                <div id="ozsOutput" class="card-text"></div>
+              </div>
+            </div>
+            <div class="card bg-warning mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Pounds:</h5>
+                <div id="poundsOutput" class="card-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script>
+      // document.getElementById("output").style.visibility = "hidden";
+
+      let input = document.getElementById("weightInput");
+      input.addEventListener("input", (e) => {
+        let pounds = e.target.value;
+        // document.getElementById("output").style.visibility = "visible";
+        document.getElementById("gramsOutput").textContent = pounds * 453.592;
+        document.getElementById("kgsOutput").textContent = pounds * 0.453592;
+        document.getElementById("ozsOutput").textContent = pounds * 16;
+      });
+    </script> -->
+  </body>
+</html>

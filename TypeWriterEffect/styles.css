@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  background: #333;
+  color: #aaa;
+}
+
+.container {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.txt-type > .txt {
+  color: aqua;
+}
+
+@keyframes border-blink {
+  from,
+  to {
+    border-right: transparent solid 2px;
+  }
+  50% {
+    border-right: aqua solid 2px;
+  }
+}
+
+.border-blink {
+  border-right: 2px solid rgb(0, 255, 255);
+  -webkit-animation: underBlink 1s infinite;
+  -moz-animation: underBlink 1s infinite;
+  -o-animation: underBlink 1s infinite;
+  animation: underBlink 1s infinite;
+}
+
+@-webkit-keyframes underBlink {
+  0% {
+    border-right: 2px solid transparent;
+  }
+  100% {
+    border-right: 2px solid rgba(0, 255, 255, 1);
+  }
+}
+@-moz-keyframes underBlink {
+  0% {
+    border-right: 2px solid transparent;
+  }
+  100% {
+    border-right: 2px solid rgba(0, 255, 255, 1);
+  }
+}
+@-o-keyframes underBlink {
+  0% {
+    border-right: 2px solid transparent;
+  }
+  100% {
+    border-right: 2px solid rgba(0, 255, 255, 1);
+  }
+}
+
+@keyframes underBlink {
+ 0% {
+    border-right: 2px solid transparent;
+  }
+  100% {
+    border-right: 2px solid rgba(0, 255, 255, 1);
+  }
+}
