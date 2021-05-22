@@ -17,7 +17,7 @@ const outHtml = (matches) => {
 }
 
 const showStates = async (searchText) => {
-  const res = await fetch("../data/states.json");
+  const res = await fetch("./data/states.json");
   const states = await res.json();
 
   let matches = states.filter((state) => {
