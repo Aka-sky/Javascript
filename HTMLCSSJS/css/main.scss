@@ -22,6 +22,7 @@ a {
     width: 100%;
     height: 100vh;
     z-index: -1;
+    animation: imageLoad 2s forwards;
 }
 
 .logo {
@@ -88,12 +89,15 @@ h1 {
 section.hero {
     color: white;
     height: 90vh;
+    opacity: 0;
+    animation: moveDown 1s ease-in-out forwards;
 
     svg.down-arrow {
         stroke: white;
         position: absolute;
         bottom: 2em;
         width: 1em;
+        animation: moveArrow 1s ease-in-out alternate-reverse infinite;
 
         path {
             fill: white;
@@ -231,5 +235,33 @@ section.more-info {
     }
     section.more-info .feature {
         gap: 0;
+    }
+}
+
+@keyframes imageLoad {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
