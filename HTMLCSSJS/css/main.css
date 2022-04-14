@@ -77,7 +77,7 @@ header {
 }
 
 header svg.menu {
-  width: 3em;
+  width: 2.3em;
   margin-top: -0.6em;
   cursor: pointer;
 }
@@ -103,7 +103,7 @@ section.hero {
 section.hero svg.down-arrow {
   stroke: white;
   position: absolute;
-  bottom: 2em;
+  bottom: 5em;
   width: 1em;
   animation: moveArrow 1s ease-in-out alternate-reverse infinite;
 }
@@ -220,6 +220,11 @@ section.more-info .desc {
     -ms-grid-column-align: left;
         justify-self: left;
   }
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media only screen and (min-width: 1200px) {
