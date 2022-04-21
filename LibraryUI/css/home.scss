@@ -1,0 +1,108 @@
+section.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.book-item {
+    max-width: 20em;
+    position: relative;
+    background: white;
+    border-radius: 0.7em;
+    padding: 0.9em;
+    display: flex;
+    margin-bottom: 2em;
+    
+    svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        width: 1.5em;
+    }
+
+    img {
+        display: block;
+        max-width: 7em;
+        max-height: 10.5em;
+        object-fit: cover;
+        border-radius: 0.7em;
+        margin-right: 1em;
+    }
+
+    .content {
+        p {
+            margin-top: 0;
+        }
+
+        p.title {
+            font-size: 1.25em;
+            // line-height: ;
+            font-weight: bold;
+        }
+
+        p.author {
+            margin-top: -0.9em;
+            font-size: 0.9em;
+        }
+        
+        p.pages {
+            margin-top: -0.5em;
+            font-size: 0.9em;
+        }
+        
+        .flex {
+            display: flex;
+            margin-top: 2em;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            p {
+                margin: 0;
+            }
+
+            p.ratings {
+                font-size: 0.9em;
+            }
+
+            p.price {
+                font-size: 1.25em;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+
+    section.books {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2em;
+        align-items: space-between;   
+        justify-content: space-between;   
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    // body {
+        //     margin: 1.5em em;
+        // }
+        
+    section.books {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 2em;
+        align-items: space-between;   
+        justify-content: space-between;   
+    }
+}
+
+
+
+

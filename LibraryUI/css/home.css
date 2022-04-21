@@ -1,0 +1,123 @@
+section.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.book-item {
+  max-width: 20em;
+  position: relative;
+  background: white;
+  border-radius: 0.7em;
+  padding: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.book-item svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 1.5em;
+}
+
+.book-item img {
+  display: block;
+  max-width: 7em;
+  max-height: 10.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.7em;
+  margin-right: 1em;
+}
+
+.book-item .content p {
+  margin-top: 0;
+}
+
+.book-item .content p.title {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.book-item .content p.author {
+  margin-top: -0.9em;
+  font-size: 0.9em;
+}
+
+.book-item .content p.pages {
+  margin-top: -0.5em;
+  font-size: 0.9em;
+}
+
+.book-item .content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.book-item .content .flex p {
+  margin: 0;
+}
+
+.book-item .content .flex p.ratings {
+  font-size: 0.9em;
+}
+
+.book-item .content .flex p.price {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.book-item:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 680px) {
+  section.books {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    gap: 2em;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  section.books {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    gap: 2em;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,41 @@
+section.login {
+    h1 {
+        font-size: 4rem;
+    }
+
+    input {
+        width: 99%;
+        margin-bottom: 2em;
+    }
+
+    select {
+        width: 99%;
+    }
+
+}
+
+.btn {
+    width: 100%;
+    margin: 6em auto 0 auto;
+    padding: 0.5em 0.7em;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 920px) {
+    body {
+        background-image: url("../assets/images/Background-1.png");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .wrapper {
+        position: relative;
+    }
+
+    section.login {
+        position: absolute;
+        right: 0;
+        max-width: 20em;
+    }
+}

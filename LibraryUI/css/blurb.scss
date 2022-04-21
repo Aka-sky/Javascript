@@ -1,0 +1,30 @@
+h1 {
+	font-size: 4rem;
+	margin: 0.3em 0;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+img {
+    display: none;
+}
+
+@media only screen and (min-width: 920px) {
+    section.blurb {
+        display: flex;
+        gap: 2em;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        max-width: 28em;
+
+    }
+}

@@ -1,0 +1,45 @@
+h1 {
+	font-size: 4rem;
+	margin: 0.3em 0;
+}
+
+input {
+	width: 99%;
+	margin-bottom: 1.7em;
+}
+
+textarea {
+	height: 13em;
+	margin-bottom: 2em;
+}
+
+.btn {
+	margin: auto;
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 920px) {
+	section.addBook .form {
+		display: flex;
+        gap: 2em;
+	}
+
+    .col {
+        width: 50%;
+    }
+
+    input {
+        margin-bottom: 4em;
+    }
+
+    textarea {
+        height: 27em;
+    }
+
+    .btn {
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: -0.5em;
+    }
+}
